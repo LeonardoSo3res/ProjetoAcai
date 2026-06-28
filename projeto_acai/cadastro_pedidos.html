@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"          content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style_acai.css">
+
+    <title>Cadastro de Pedidos</title>
+
+</head>
+
+<body>
+
+    <h2>🍨 CADASTRO DE PEDIDOS 🍧</h2>
+
+    <ul class="menu">
+
+        <li><a href="conteudo.html">
+                Pagina Inicial</a></li>
+        <li><a href="cadastro_pedidos.php">Cadastro de Pedidos</a></li>
+    </ul>
+
+    <fieldset>
+        <legend><strong>DADOS DO PEDIDO</strong></legend>
+
+        <!-- FORMULÁRIO -->
+        <form method="POST" action="enviar_pedidos.php">
+
+            <label><strong>Nome do Cliente:
+            </strong></label><br>
+            <input type="text" name="cliente"
+            style="width: 98%; padding: 10px" required><br><br>
+            <label><strong>Sabor:</strong></label><br>
+            <select name="sabor">
+                <option>Açaí Tradicional</option>
+                <option>Morango</option>
+                <option>Chocolate</option>
+                <option>Leite Ninho</option>
+                <option>Flocos</option>
+                <option>Outros Sabores</option>
+            </select><br><br>
+            
+            <label><strong>Tamanho:</strong></label><br>
+            <input type="radio" name="tamanho" value="300ml"> 300ml <input type="radio" name="tamanho" value="500ml">500ml <input type="radio" name="tamanho" value="700ml"> 700ml<br><br>
+            
+            <label><strong>Complementos:</strong></label><br><input type="checkbox" name="comp[]"value="Granola"> Granola <input type="checkbox" name="comp[]" value="Leite Condensado"> Leite Condensado <input type="checkbox" name="comp[]" value="Banana"> Banana <input type="checkbox" name="comp[]" value="Morango"> Morango <input type="checkbox" name="comp[]" value="Paçoca"> Paçoca<br><br><label><strong>Data do Pedido:</strong></label><br>
+            <input type="date" name="data"><br><br>
+            
+            <input type="submit" value="FINALIZAR PEDIDO" style="padding: 10px 20px; cursor: pointer;">
+        </form>
+    </fieldset>
+            
+    <footer id="rodape">
+        <p> © 2026 • Desenvolvido com muitas risadas, código e boas ideias por <strong>Leonardo Soares, Janete Calixta, Rejane Ribeiro</strong> colaboração criativa <strong>Nayara Soares</strong>
+    </p>
+
+    
+    </footer>
+        
+</body>
+        
+</html>

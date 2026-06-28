@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Açaí & Sorvetes Premium</title>
+
+    <style>
+
+body { 
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+iframe {
+    width: 100%;
+    height: 100VH;
+    border: none;
+}
+ 
+    </style>    
+</head>
+<body>
+
+    <iframe 
+        name="principal" src="conteudo.html"
+        
+    </iframe>    
+
+    <button id="abrirChat">💬</button>
+
+<div id="chatbot" style="display:none;">
+
+    <div class="chat-container">
+
+    <div class="chat-header">
+        Chatbot Gemini
+    </div>
+
+    <div class="chat-messages" id="chat-messages">
+
+    </div>
+
+    <div class="chat-input">
+
+        <input
+            type="text"
+            id="user-input"
+            placeholder="Digite sua mensagem..."
+        >
+
+        <button id="send-btn">
+            Enviar
+        </button>
+
+    </div>
+
+</div>
+
+</div>
+
+<script src="chatbot.js"></script>
+
+<link rel="stylesheet" href="chatbot.css">
+
+</body>
+<footer id="rodape">
+         © 2026 • Desenvolvido com muitas risadas, código e boas ideias por <strong>Leonardo Soares, Janete Calixta, Rejane Ribeiro</strong> colaboração criativa <strong>Nayara Soares</strong>
+         
+    </footer>
+</html>
